@@ -8,6 +8,7 @@ You have to put private keys into `keys.txt` 🧬
 
 ![Configuration](https://github.com/MsLolita/QuestPassClaimer/assets/58307006/2a9c8ad2-145d-46b5-83e1-2b5d6fd8a05e)
 
+You can put referral address to farm 50 points in `config.py`
 
 ### Library Installation 📚
 

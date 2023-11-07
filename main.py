@@ -2,6 +2,7 @@ from pysui import SyncClient, SuiConfig, handle_result, ObjectID, SuiAddress
 from pysui.abstracts import SignatureScheme
 from pysui.sui.sui_txn import SyncTransaction
 
+from config import REFERRAL_ADDRESS
 from utils import logger
 from utils.file_manager import str_to_file
 
@@ -28,7 +29,7 @@ def send_tx(private_key: str):
         target="0x03e88d43a310633152deef7d164dd4273eb2ce8b0ffc0d1ff597ab49fd88908d::quest::mint",
         arguments=[
             ObjectID("0x109bf36609bef3f02452445d34f515a5e8a7bc6e4cb6336cbdd9be83ae62b1c3"),
-            SuiAddress("0x01baaf89af9309444d63d6fbb4faba8bf5232e5286a92ddb22e899027f90b13b"),
+            SuiAddress(REFERRAL_ADDRESS),
             ObjectID("0x0000000000000000000000000000000000000000000000000000000000000006"),
         ]
     )
